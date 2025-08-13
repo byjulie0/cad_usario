@@ -14,9 +14,9 @@ if(isset($_POST['cadastar'])){
     $res = $objUsuario->cadastrar();
 
     if($res){
-        echo '<script> alert("Cadastro com sucesso") </script>';
+        // echo '<script> alert("Cadastro com sucesso") </script>';
     }else{
-        echo '<script> alert("Falha no Cadastro") </script>';
+        // echo '<script> alert("Falha no Cadastro") </script>';
     }
 }
 
@@ -80,14 +80,14 @@ if(isset($_POST['editar'])){
             Senha:            
             <input type="text" id="senha" name="senha">
             <br><br>
-            <button type="submit" name="cadastar" id="submitButton">Cadastar</button>
+            <button type="submit" name="cadastar" id="btn_cadastro">Cadastrar</button>
             <br><br>
         </form>    
     </div>
 
     <div>
         <form method="POST">            
-            <button type="submit" name="listar" id="submitButton">Listar</button>
+            <button type="submit" name="listar" id="btn_listar">Listar</button>
         </form> 
 
         <?php if (!empty($usuarios)): ?>
